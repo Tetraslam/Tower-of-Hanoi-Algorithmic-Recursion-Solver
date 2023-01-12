@@ -10,7 +10,7 @@ def tower_of_hanoi(x, source, auxiliary, target, elapsed_time):
     return elapsed_time
 
 def measure_time(x):
-    start_time = time.time()
+    start_time = time.time() 
     elapsed_time = tower_of_hanoi(x, 'A', 'B', 'C', 0)
     elapsed_time += time.time() - start_time
     print("Total time elapsed: ", elapsed_time, " seconds")
