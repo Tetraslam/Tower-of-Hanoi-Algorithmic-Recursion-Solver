@@ -1,7 +1,7 @@
 import time
 
 def tower_of_hanoi(x, source, auxiliary, target, elapsed_time):
-    if n == 1:
+    if x == 1:
         print("Move disk 1 from source", source, "to target", target)
         return elapsed_time
     elapsed_time = tower_of_hanoi(x - 1, source, target, auxiliary, elapsed_time)
